@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="VK SeaLife — Merchant Navy and ETO guidance, maritime career resources and sea-life content.">
+<title>VK SeaLife ⚓</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10233b;background:#f5faff;line-height:1.55}
+.nav{height:72px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:rgba(245,250,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid #dce8f2}
+.logo{font-weight:900;font-size:17px;letter-spacing:.08em;text-decoration:none;color:#10233b}.logo b{background:#10233b;color:#fff;border-radius:8px;padding:6px 8px;margin-right:6px}
+nav{display:flex;gap:24px}nav a{color:#40566d;text-decoration:none;font-size:14px;font-weight:700}nav a:hover{color:#0785bb}.menu{display:none;border:0;background:none;font-size:25px}
+.hero{min-height:650px;padding:75px 7%;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;background:radial-gradient(circle at 82% 25%,#d8f3ff,transparent 38%)}
+.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:900;color:#0785bb}.hero h1{font-size:clamp(46px,6vw,78px);line-height:1.02;letter-spacing:-.045em;margin:12px 0 22px}.hero h1 em{color:#0785bb;font-style:normal}.lead{font-size:18px;color:#5a7086;max-width:610px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{display:inline-block;text-decoration:none;padding:13px 20px;border-radius:11px;font-weight:800;border:1px solid #0785bb}.primary{background:#0785bb;color:#fff}.outline{color:#0785bb;background:#fff}
+.stats{display:flex;gap:30px;margin-top:35px}.stats strong{display:block;font-size:18px}.stats small{color:#718397}
+.visual{height:440px;border-radius:28px;overflow:hidden;position:relative;background:linear-gradient(#061a32 0 48%,#0b4969 49%);box-shadow:0 25px 70px rgba(5,35,60,.18)}
+.moon{position:absolute;right:17%;top:14%;width:95px;height:95px;border-radius:50%;background:#edf9ff}.ship{position:absolute;top:43%;left:24%;font-size:125px;filter:drop-shadow(0 12px 8px #00131f)}.waves{position:absolute;bottom:0;left:-5%;right:-5%;height:32%;background:repeating-linear-gradient(170deg,transparent 0 18px,#75d2e7 19px 22px);opacity:.45}.visual .caption{position:absolute;left:28px;bottom:27px;color:#fff}.caption b{display:block;letter-spacing:.18em}.caption span{color:#a9dcea;font-size:13px}
+.section{padding:95px 7%}.head{max-width:760px;margin-bottom:42px}.head h2,.dark h2,.about h2{font-size:clamp(32px,4vw,52px);line-height:1.08;margin:5px 0 14px;letter-spacing:-.03em}.head p:last-child{color:#65798d}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e0ebf3;border-radius:18px;padding:27px;box-shadow:0 12px 35px rgba(20,55,80,.06)}.icon{font-size:30px}.card h3{margin:15px 0 7px}.card p{color:#687d90;font-size:14px}
+.dark{padding:95px 7%;background:#071d34;color:#fff}.dark .head p:last-child{color:#9eb2c5}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px;background:rgba(255,255,255,.04)}.step span{color:#60c9ea;font-weight:900}.step h3{font-size:21px}.step p{color:#a9b9c8}
+.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.resource{background:#fff;border:1px solid #e0ebf3;border-radius:18px;padding:28px}.resource small{color:#0785bb;font-weight:900;letter-spacing:.12em}.resource h3{font-size:23px}.resource p{color:#65798d}
+.social{margin-top:65px;padding:40px;border-radius:24px;background:#dff5fd;display:flex;align-items:center;justify-content:space-between;gap:25px}.social h2{margin:5px 0;font-size:32px}.social p{color:#587087}.social .buttons{margin:0}
+.about{padding:95px 7%;background:linear-gradient(120deg,#ddf5ff,#fff)}.about p:last-child{max-width:760px;color:#5d7185;font-size:18px}
+footer{background:#06192c;color:#a9bdce;padding:28px 7%;display:flex;justify-content:space-between;align-items:center;font-size:13px}footer .logo{color:#fff}
+@media(max-width:850px){nav{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:55px}.visual{height:350px}.cards{grid-template-columns:repeat(2,1fr)}.steps,.resources{grid-template-columns:1fr}.social{flex-direction:column;align-items:flex-start}footer{flex-direction:column;align-items:flex-start;gap:12px}}
+@media(max-width:520px){.nav{padding:0 5%}.hero,.section,.dark,.about{padding-left:5%;padding-right:5%}.hero h1{font-size:48px}.cards{grid-template-columns:1fr}.stats{gap:16px}.ship{left:14%;font-size:100px}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="#home"><b>VK</b> SEALIFE ⚓</a>
+<button class="menu" onclick="toggleMenu()">☰</button>
+<nav id="nav">
+<a href="#home">Home</a><a href="#eto">ETO</a><a href="#merchant">Merchant Navy</a><a href="#resources">Resources</a><a href="#about">About</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div>
+<div class="eyebrow">⚓ OCEAN CALLING</div>
+<h1>Your Journey<br><em>to the Sea</em> Starts Here.</h1>
+<p class="lead">Simple, practical guidance for Merchant Navy &amp; ETO aspirants — from eligibility and courses to life on board.</p>
+<div class="buttons"><a class="btn primary" href="#eto">Explore ETO</a><a class="btn outline" href="#resources">View Resources</a></div>
+<div class="stats"><div><strong>ETO</strong><small>Career Guidance</small></div><div><strong>⚓</strong><small>Maritime Life</small></div><div><strong>🎥</strong><small>Sea Life Vlogs</small></div></div>
+</div>
+<div class="visual"><div class="moon"></div><div class="ship">🚢</div><div class="waves"></div><div class="caption"><b>VK SEALIFE</b><span>Learn • Sail • Grow</span></div></div>
+</section>
+
+<section id="eto" class="section">
+<div class="head"><div class="eyebrow">01 / ETO</div><h2>Start your ETO journey with clarity.</h2><p>Understand the basics before choosing a course or joining a ship.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">🎓</div><h3>Eligibility</h3><p>Learn the educational background and eligibility criteria to check for ETO pathways.</p></div>
+<div class="card"><div class="icon">💰</div><h3>Course &amp; Fees</h3><p>Understand course structure, training stages and costs you should verify before applying.</p></div>
+<div class="card"><div class="icon">🩺</div><h3>Medical</h3><p>Know why approved medical fitness and eyesight standards matter for seafarers.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>ETO Role</h3><p>Explore electrical, electronic, automation and communication systems on board.</p></div>
+</div>
+</section>
+
+<section id="merchant" class="dark">
+<div class="head"><div class="eyebrow">02 / MERCHANT NAVY</div><h2>Life beyond the shore.</h2><p>Explore the people, departments, routines and skills behind commercial shipping.</p></div>
+<div class="steps">
+<div class="step"><span>01</span><h3>Choose your path</h3><p>Deck, Engine or Electro-Technical — understand the difference.</p></div>
+<div class="step"><span>02</span><h3>Get qualified</h3><p>Complete the right education, training and mandatory certifications.</p></div>
+<div class="step"><span>03</span><h3>Go on board</h3><p>Build practical experience, discipline and confidence at sea.</p></div>
+</div>
+</section>
+
+<section id="resources" class="section">
+<div class="head"><div class="eyebrow">03 / RESOURCES</div><h2>Learn something maritime every day.</h2></div>
+<div class="resources">
+<div class="resource"><small>⚡ DAILY WORD</small><h3>Maritime Vocabulary</h3><p>Easy explanations of technical and shipboard terms.</p></div>
+<div class="resource"><small>📝 CAREER</small><h3>ETO FAQs</h3><p>Quick answers to common aspirant questions.</p></div>
+<div class="resource"><small>🌊 SEA LIFE</small><h3>Life on Ship</h3><p>Topics about routines, connectivity and work at sea.</p></div>
+</div>
+<div class="social"><div><div class="eyebrow">FOLLOW THE JOURNEY</div><h2>More VK SeaLife content</h2><p>Watch the videos and follow the latest maritime updates.</p></div><div class="buttons"><a class="btn primary" target="_blank" href="https://www.instagram.com/vk_sealife/">Instagram ↗</a><a class="btn outline" target="_blank" href="https://www.youtube.com/@VijaykiranETOVLOGS">YouTube ↗</a></div></div>
+</section>
+
+<section id="about" class="about"><div class="eyebrow">04 / ABOUT VK SEALIFE</div><h2>For aspirants who dream of the ocean.</h2><p>VK SeaLife shares Merchant Navy and ETO-focused educational content, career guidance and sea-life videos in a simple, aspirant-friendly format.</p></section>
+
+<footer><div class="logo"><b>VK</b> SEALIFE ⚓</div><div>© 2026 VK SeaLife • Learn • Sail • Grow.</div></footer>
+<script>
+function toggleMenu(){const n=document.getElementById('nav');n.style.display=n.style.display==='flex'?'none':'flex';n.style.position='absolute';n.style.right='5%';n.style.top='65px';n.style.flexDirection='column';n.style.padding='18px';n.style.background='#fff';n.style.borderRadius='14px';n.style.boxShadow='0 15px 40px rgba(16,35,59,.15)';}
+</script>
+</body>
+</html>
